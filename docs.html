@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>T-Cloud | Cloud Hosting for Everyone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- Nav Bar -->
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">T-Cloud.</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="docs.html">Docs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Showcase Area-->
+    <section class="feature-head bg-primary py_6">
+        <div class="container grid">
+            <div class = "feature-text">
+                <div class="xl">Docs</div>
+                <div class="lead">Learn how to work with TCloud</div>
+            </div>
+            <img src="images/docs.png" alt="">  
+        </div>
+    </section>
+    <!-- Docs Main -->
+
+    <section class="docs-main my-4">
+        <div class="container grid">
+            <div class="card p-3 feature-text"  >
+                <h3 class="my-2">Essentials</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#" id="in"  class="text-primary">Introduction</a></li>
+                        <li><a href="#"  id="ab">About TCloud</a></li>
+                        <li><a href="#">Installation</a></li>
+                    </ul>
+                </nav>
+
+                <h3 class="my-2">Deployment</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">Setting up a container</a></li>
+                        <li><a href="#">Using the CLI</a></li>
+                        <li><a href="#">Managing resources</a></li>
+                        <li><a href="#">Upgrade & downgrade</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="card right" id="introduction">
+                <h2>Introduction</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum animi aperiam laborum labore distinctio, dicta laboriosam, architecto rem illo at delectus culpa reprehenderit hic veniam doloribus quae obcaecati quis. Dolores!</p>
+                <div class="alert alert-success">
+                    <i class="fas fa-info"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, animi?
+                </div>
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet iure nemo eum aliquid placeat quo esse, necessitatibus omnis voluptatem totam!</p>
+                
+                <a href="#" class="btn btn-primary my-2">Install CLI</a>
+                <h3>Requirements</h3>
+                <ul>
+                    <li>Windows 10, Mac OSX, Linux</li>
+                        <li>Node.js v12 or higher</li>
+                </ul>
+                <h3>Install</h3>
+                <p class="my-1">Mac</p>
+                <pre><code> $ brew install tcloud-cli</code></pre>
+                
+                <p class="my-1">NPM</p>
+                <pre><code> $ npm install tcloud-cli</code></pre>
+      
+                <p class="my-1">Yarn</p>
+                <pre><code> $ yarn install tcloud-cli</code></pre>
+      
+            </div> 
+            <div class="card" id="About">
+                <h2>About</h2>
+                <p>Welcome to the best platform for building applications of all types with modern architecture and scaling</p>
+                    <div class="alert alert-success">
+                    <i class="fas fa-info"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, animi?
+                </div>
+                <h3>Lorem, ipsum dolor.</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet iure nemo eum aliquid placeat quo esse, necessitatibus omnis voluptatem totam!</p>
+                
+                <a href="#" class="btn btn-primary my-2">Install CLI</a>
+                <h3>Requirements</h3>
+                <ul>
+                    <li>Windows 10, Mac OSX, Linux</li>
+                        <li>Node.js v12 or higher</li>
+                </ul>
+                <h3>Install</h3>
+                <p class="my-1">Mac</p>
+                <pre><code> $ brew install tcloud-cli</code></pre>
+                
+                <p class="my-1">NPM</p>
+                <pre><code> $ npm install tcloud-cli</code></pre>
+      
+                <p class="my-1">Yarn</p>
+                <pre><code> $ yarn install tcloud-cli</code></pre>
+      
+            </div> 
+        </div>
+    </section>
+<footer class="bg-dark py-5">
+    <div class="container grid grid-3">
+        <div>
+            <h1>T-Cloud</h1>
+            <p>Copyright &copy; 2020</p>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="features.html">Features</a>
+                </li>
+                <li>
+                    <a href="docs.html">Docs</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="social">
+            <a href="#"><i class="fab fa-github fa-2x"></i></a>
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    let inbtn = document.getElementById("in");
+    let abbtn = document.getElementById("ab");
+    let inbox = document.getElementById("introduction");
+    let abbox = document.getElementById("About");
+
+    abbtn.onclick = function(){
+    inbox.style.display = "none";
+    abbox.style.display = "block"
+    abbtn.classList.add("text-primary");
+    inbtn.classList.remove("text-primary");
+}
+    inbtn.onclick = function(){
+   
+    abbox.style.display = "none";
+    inbox.style.display = "block"
+    inbtn.classList.add("text-primary");
+    abbtn.classList.remove("text-primary");
+  
+    }
+
+    </script>
+</body>
+</html>
